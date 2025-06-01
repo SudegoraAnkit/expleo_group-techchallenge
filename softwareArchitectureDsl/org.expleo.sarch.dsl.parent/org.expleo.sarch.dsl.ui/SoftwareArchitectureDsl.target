@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?pde version="3.8"?>
+<target name="SoftwareArchitectureDsl">
+	<locations>
+		<location path="${eclipse_home}" type="Profile"/>
+		<location id="org.eclipse.xtend.lib" path="${eclipse_home}" type="Feature"/>
+		<location id="org.eclipse.xtend.sdk" path="${eclipse_home}" type="Feature"/>
+		<location id="org.eclipse.xtext.docs" path="${eclipse_home}" type="Feature"/>
+		<location id="org.eclipse.xtext.examples" path="${eclipse_home}" type="Feature"/>
+		<location id="org.eclipse.xtext.redist" path="${eclipse_home}" type="Feature"/>
+		<location id="org.eclipse.xtext.runtime" path="${eclipse_home}" type="Feature"/>
+		<location id="org.eclipse.xtext.sdk" path="${eclipse_home}" type="Feature"/>
+		<location id="org.eclipse.xtext.ui" path="${eclipse_home}" type="Feature"/>
+		<location id="org.eclipse.xtext.xbase" path="${eclipse_home}" type="Feature"/>
+		<location id="org.eclipse.xtext.xtext.ui.graph" path="${eclipse_home}" type="Feature"/>
+		<location id="org.eclipse.xtext.xtext.ui" path="${eclipse_home}" type="Feature"/>
+	</locations>
+</target>

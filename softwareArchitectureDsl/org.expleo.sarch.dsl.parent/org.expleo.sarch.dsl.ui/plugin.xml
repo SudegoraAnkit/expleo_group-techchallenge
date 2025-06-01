@@ -472,6 +472,45 @@
 			type="text">
 		</fileTypes>
 	</extension>
+ <extension
+       id="product"
+       point="org.eclipse.core.runtime.products">
+    <product
+          application="org.eclipse.ui.ide.workbench"
+          name="SArchDsl">
+       <property
+             name="appName"
+             value="SArchDsl">
+       </property>
+    </product>
+ </extension>
+ <extension
+       point="org.eclipse.ui.intro">
+    <intro
+          class="org.eclipse.ui.intro.config.CustomizableIntroPart"
+          id="org.expleo.sarch.dsl.ui.intro">
+    </intro>
+    <introProductBinding
+          introId="org.expleo.sarch.dsl.ui.intro"
+          productId="org.expleo.sarch.dsl.ui.product">
+    </introProductBinding>
+ </extension>
+ <extension
+       point="org.eclipse.ui.intro.config">
+    <config
+          content="introContent.xml"
+          id="org.expleo.sarch.dsl.ui.introConfigId"
+          introId="org.expleo.sarch.dsl.ui.intro">
+       <presentation
+             home-page-id="root">
+          <implementation
+                kind="html"
+                os="win32,linux,macosx"
+                style="content/shared.css">
+          </implementation>
+       </presentation>
+    </config>
+ </extension>
     
 	
 </plugin>

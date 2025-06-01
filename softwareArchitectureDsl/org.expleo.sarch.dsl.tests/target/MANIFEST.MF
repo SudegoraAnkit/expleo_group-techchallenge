@@ -3,7 +3,7 @@ Automatic-Module-Name: org.expleo.sarch.dsl.tests
 Bundle-ManifestVersion: 2
 Bundle-Name: org.expleo.sarch.dsl.tests
 Bundle-Vendor: My Company
-Bundle-Version: 1.0.0.202506011036
+Bundle-Version: 1.0.0.202506011225
 Bundle-SymbolicName: org.expleo.sarch.dsl.tests; singleton:=true
 Bundle-ActivationPolicy: lazy
 Require-Bundle: org.expleo.sarch.dsl,org.eclipse.xtext.testing,org.eclip

@@ -13,4 +13,5 @@ public class SoftwareArchitectureDslUiModule extends AbstractSoftwareArchitectur
 	public SoftwareArchitectureDslUiModule(AbstractUIPlugin plugin) {
 		super(plugin);
 	}
+	
 }

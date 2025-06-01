@@ -15,10 +15,17 @@ Require-Bundle: org.expleo.sarch.dsl,
  org.eclipse.ui.ide;bundle-version="3.18.500",
  org.eclipse.ui,
  org.eclipse.compare,
- org.eclipse.xtext.builder
+ org.eclipse.xtext.builder,
+ org.eclipse.ui.intro
 Import-Package: org.apache.log4j
 Bundle-RequiredExecutionEnvironment: JavaSE-17
-Export-Package: org.expleo.sarch.dsl.ui.quickfix,
+Export-Package: org.expleo.sarch.dsl.ui,
+ org.expleo.sarch.dsl.ui.action,
  org.expleo.sarch.dsl.ui.contentassist,
- org.expleo.sarch.dsl.ui.internal
+ org.expleo.sarch.dsl.ui.internal;x-internal:=true,
+ org.expleo.sarch.dsl.ui.labeling,
+ org.expleo.sarch.dsl.ui.outline,
+ org.expleo.sarch.dsl.ui.quickfix,
+ org.expleo.sarch.dsl.ui.util,
+ org.expleo.sarch.dsl.validation
 Bundle-Activator: org.expleo.sarch.dsl.ui.internal.DslActivator

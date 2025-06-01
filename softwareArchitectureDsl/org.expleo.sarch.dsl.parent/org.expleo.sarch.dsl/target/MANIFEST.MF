@@ -3,7 +3,7 @@ Automatic-Module-Name: org.expleo.sarch.dsl
 Bundle-ManifestVersion: 2
 Bundle-Name: org.expleo.sarch.dsl
 Bundle-Vendor: My Company
-Bundle-Version: 1.0.0.202506011104
+Bundle-Version: 1.0.0.202506011225
 Bundle-SymbolicName: org.expleo.sarch.dsl; singleton:=true
 Bundle-ActivationPolicy: lazy
 Require-Bundle: org.eclipse.xtext,org.eclipse.xtext.xbase,org.eclipse.eq
