@@ -1,0 +1,54 @@
+grammar org.expleo.sarch.dsl.SoftwareArchitectureDsl with org.eclipse.xtext.common.Terminals
+
+generate softwareArchitectureDsl "http://www.expleo.org/sarch/dsl/SoftwareArchitectureDsl"
+
+import "http://www.eclipse.org/emf/2002/Ecore" as ecore
+
+// Root element of your model
+// Root element of your model
+Architecture:
+    'Architecture' name=STRING '{' // 'Architecture' keyword, followed by a quoted string name
+        (elements+=ArchitectureElement)*
+    '}'
+;
+
+ArchitectureElement:
+    Interface | Component
+;
+
+Interface:
+    'interface' name=ID '{'
+        (elements+=Element)*
+    '}'
+;
+
+Element:
+    type=DataType name=ID
+;
+
+enum DataType:
+    StringType='String' | IntType='int' | BooleanType='boolean' | FloatType='float' | DoubleType='double' | VoidType='void'
+;
+
+Component:
+    'component' name=ID '{'
+        (ports+=Port)*
+    '}'
+;
+
+// Define a common abstract base for all port types
+Port:
+    PPort | RPort
+;
+
+// Define a Provides Port
+PPort:
+    'provides' interface=[Interface|ID] 'via' name=ID
+;
+
+// Define a Requires Port
+RPort:
+    'requires' interface=[Interface|ID] 'via' name=ID
+;
+
+

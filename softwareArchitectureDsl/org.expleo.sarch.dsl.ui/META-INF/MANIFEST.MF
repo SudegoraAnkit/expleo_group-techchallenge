@@ -1,0 +1,24 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.expleo.sarch.dsl.ui
+Bundle-ManifestVersion: 2
+Bundle-Name: org.expleo.sarch.dsl.ui
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: org.expleo.sarch.dsl.ui; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.expleo.sarch.dsl,
+ org.expleo.sarch.dsl.ide,
+ org.eclipse.xtext.ui,
+ org.eclipse.xtext.ui.shared,
+ org.eclipse.xtext.ui.codetemplates.ui,
+ org.eclipse.ui.editors;bundle-version="3.14.300",
+ org.eclipse.ui.ide;bundle-version="3.18.500",
+ org.eclipse.ui,
+ org.eclipse.compare,
+ org.eclipse.xtext.builder
+Import-Package: org.apache.log4j
+Bundle-RequiredExecutionEnvironment: JavaSE-17
+Export-Package: org.expleo.sarch.dsl.ui.quickfix,
+ org.expleo.sarch.dsl.ui.contentassist,
+ org.expleo.sarch.dsl.ui.internal
+Bundle-Activator: org.expleo.sarch.dsl.ui.internal.DslActivator

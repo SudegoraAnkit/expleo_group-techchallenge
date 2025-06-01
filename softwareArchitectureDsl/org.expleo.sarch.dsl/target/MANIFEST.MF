@@ -1,0 +1,23 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.expleo.sarch.dsl
+Bundle-ManifestVersion: 2
+Bundle-Name: org.expleo.sarch.dsl
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.202506011104
+Bundle-SymbolicName: org.expleo.sarch.dsl; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.eclipse.xtext,org.eclipse.xtext.xbase,org.eclipse.eq
+ uinox.common;bundle-version="3.19.0",org.eclipse.emf.ecore,org.eclipse.
+ xtext.xbase.lib;bundle-version="2.38.0",org.eclipse.emf.common,org.antl
+ r.runtime;bundle-version="[3.2.0,3.2.1)",com.google.gson;bundle-version
+ ="2.12.1",slf4j.api;bundle-version="2.0.16",slf4j.simple;bundle-version
+ ="2.0.16"
+Export-Package: org.expleo.sarch.dsl.softwareArchitectureDsl,org.expleo.
+ sarch.dsl.serializer,org.expleo.sarch.dsl.generator,org.expleo.sarch.ds
+ l.parser.antlr.internal,org.expleo.sarch.dsl.validation,org.expleo.sarc
+ h.dsl.parser.antlr,org.expleo.sarch.dsl.softwareArchitectureDsl.util,or
+ g.expleo.sarch.dsl.services,org.expleo.sarch.dsl.scoping,org.expleo.sar
+ ch.dsl,org.expleo.sarch.dsl.softwareArchitectureDsl.impl
+Import-Package: org.apache.log4j
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=17))"
+

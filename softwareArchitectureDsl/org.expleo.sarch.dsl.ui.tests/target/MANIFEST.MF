@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.expleo.sarch.dsl.ui.tests
+Bundle-ManifestVersion: 2
+Bundle-Name: org.expleo.sarch.dsl.ui.tests
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.202506011036
+Bundle-SymbolicName: org.expleo.sarch.dsl.ui.tests; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.expleo.sarch.dsl.ui,org.eclipse.xtext.testing,org.ec
+ lipse.xtext.ui.testing,org.eclipse.xtext.xbase.testing,org.eclipse.xtex
+ t.xbase.ui.testing,org.eclipse.core.runtime,org.eclipse.ui.workbench;re
+ solution:=optional
+Import-Package: org.junit.jupiter.api;version="[5.1.0,6.0.0)",org.junit.
+ jupiter.api.extension;version="[5.1.0,6.0.0)"
+Export-Package: org.expleo.sarch.dsl.ui.tests;x-internal=true
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=17))"
+
