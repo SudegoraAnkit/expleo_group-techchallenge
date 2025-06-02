@@ -11,29 +11,12 @@ This project packages the DSL editor as a portable, standalone desktop applicati
 
 1. **Import the project into Eclipse.**
 
-2. **Create or open the Product Configuration (.product) file** in your main plugin project.
+2. **Select `org.expleo.sarch.dsl` and right click on it**
 
-3. **Add all required plugins** (including your DSL and RCP plugins).
+3. **Run as `Eclipse Application` and Now `Create a project in General`**
 
-4. **Export the application:**
-    - Open the `.product` file.
-    - Go to the Overview tab.
-    - Click “Eclipse Product export wizard”.
-    - Select your OS (Windows), architecture (x86_64), and output location.
-    - (Optional) Enable “Bundled JRE” for a portable, no-Java-needed app.
+4. **Create a file inside project as `test_sarch.sarch` (.sarch extension)**
 
-5. The output is a folder containing `YourApp.exe` and all dependencies. Zip this folder to distribute.
+5. **Define the grammer and check**
 
-## Running the Application
 
-- Unzip the folder and double-click `YourApp.exe` (Windows).
-- No installation or Java setup required.
-
-## Notes
-
-- To change icons, splash screen, or branding, update the product configuration accordingly.
-- The app is portable: it runs from any folder and does not alter the system.
-
-## License
-
-[Specify your license here]
